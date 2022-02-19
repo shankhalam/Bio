@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Khalam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        .col-md-3{
+    background-color: white;
+}
+body{
+    background: #636666;
+}
+.col_name h3{
+    font-weight: 650;
+}
+.container{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col_name{
+    color: black;
+}
+.col_designation{
+    color: #64ae9e
+}
+.contact_feild .col-md-2{
+    border-right: 1px solid #64ae9e;
+}
+.profilephoto{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+}
+.profilephoto img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+}
+li{
+    width: 20%;
+    text-align: center;
+}
+.figure img{
+    width: 30px;
+}
+.progress{
+    height: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.progress-bar{
+    background-color: #64ae9e;
+}
+.card-body{
+    padding-top: 60px;
+    background-color: #373737;
+}
+.card{
+    background-color: #373737;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif
+}
+.profiledetails{
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    margin-top: -40px;
+}
+.material-icons.phone { 
+    color: #64ae9e;
+}
+.material-icons.email{
+    color: #64ae9e;
+}
+.material-icons.whatsapp{
+    color: #64ae9e;
+}
+.material-icons.house{
+    color: #64ae9e;
+}
+.bi.bi-facebook{
+    font-size: 32px;
+}
+.bi.bi-instagram{
+    font-size: 32px;
+}
+.bi.bi-twitter{
+    font-size: 32px;
+}
+.bi.bi-skype{
+    font-size: 32px;
+}
+.bi.bi-film{
+    font-size: 32px;
+    color: #64ae9e;
+}
+.bi.bi-file-earmark-music-fill{
+    font-size: 32px;
+    color: #64ae9e;
+}
+.bi.bi-book-half{
+    font-size: 32px;
+    color: #64ae9e; 
+}
+.bi.bi-bicycle{
+    font-size: 32px;
+    color: #64ae9e; 
+}
+.bi.bi-controller{
+    font-size: 32px;
+    color: #64ae9e; 
+}
+.material-icons.colour{
+    color: #64ae9e;
+    width: 30px;
+}
+.qualification{
+    border-left: 1px solid #64ae9e; 
+    padding-left: 50px;
+}
+.job_title{
+    border-left: 1px solid #64ae9e;
+    padding-left: 50px
+}
+@media screen and (max-width:768px) and (min-width:320px){
+    .profilephoto{
+        clip-path: circle(48.6% at 50% 50%);
+    }
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        margin-top: 0px;
+    }
+    .col-md-3{
+        background-color: #373737;
+    }
+    .qualification{
+        border-left: none; 
+        padding-left: 0px;
+    }
+    .job_title{
+        border-left:none; 
+        padding-left: 0px; 
+    }
+    ul{
+        list-style: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    li{
+        float: left;
+        width: 33.33%;
+    }
+    .contact_feild .col-md-2{
+        border-right:none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+        margin-top: -20px;
+    }
+    .profilephoto{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    }
+}
+@media screen and (min-width:992px) and (max-width:1024px){
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+        margin-top: -30px;
+    }
+    .profilephoto{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1366px){
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+        margin-top: -30px;
+    }
+    .profilephoto{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    }
+}
+@media screen and (min-width:1366px) and (max-width:2560px){
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+        margin-top: -40px;
+    }
+    .profilephoto{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+    }
+}
+@media screen and (max-width:320px){
+    .profilephoto{
+        clip-path: circle(48.6% at 50% 50%);
+    }
+    .profiledetails{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        margin-top: 0px;
+    }
+    .col-md-3{
+        background-color: #373737;
+    }
+    .qualification{
+        border-left: none;
+        padding-left: 0px; 
+    }
+    .job_title{
+        border-left:none;
+        padding-left: 0px;  
+    }
+    ul{
+        text-decoration: none;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container border">
+        <div class="row ">
+            <div class="col-md-3 g-0 gy-0">
+                <div class="profilephoto" >
+                    <img src="https://avatars.githubusercontent.com/u/99714393?v=4" width="100%" alt="profile pic">
+                </div>
+                <div class="profiledetails">
+                <div class="card">
+                    <div class="card-body text-white">
+                        <h5 class="card-title display-6">EXPERTISE</h5>
+                      <br>
+                        <div class="row mb-2">
+                            <div class="col-md-6 fs-6">Creativity</div>
+                            <div class="col-md-6 fs-6"><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6 fs-6">Public Speech</div>
+                            <div class="col-md-6 fs-6"><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6 fs-6">Leadership</div>
+                            <div class="col-md-6 fs-6"><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6 fs-6">Flexibility</div>
+                            <div class="col-md-6 fs-6"><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6 fs-6">Motivation</div>
+                            <div class="col-md-6 fs-6"><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card">
+                        <div class="card-body text-white">
+                          <h5 class="card-title display-6">SKILLS</h5>
+                          <br>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">HTML & CSS</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">Java Script</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">Illustrator</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">Photoshop</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">Indesign</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 fs-6">Word</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 fs-6">Excel</div>
+                                <div class="col-md-6 fs-6"><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-body text-white">
+                              <h5 class="card-title display-6">LANGUAGES</h5>
+                              <br>
+                                <div class="row mb-2">
+                                    <div class="col-md-6 fs-6">English</div>
+                                        <div class="row">
+                                            <div class="block-bar" style="width:20px; height: 20px; display: inline-flex;">
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons white">stop</span>  
+                                                <span class="material-icons white">stop</span>  
+                                            </div>   
+                                        </div>
+                                </div>
+                                <br>
+                                <div class="row mb-2">
+                                    <div class="col-md-6 fs-6">Hindi</div>
+                                        <div class="row">
+                                            <div class="block-bar" style="width:20px; height: 20px; display: inline-flex;">
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons colour">stop</span>  
+                                                <span class="material-icons white">stop</span>  
+                                                <span class="material-icons white">stop</span>  
+                                                <span class="material-icons white">stop</span>  
+                                                <span class="material-icons white">stop</span> 
+                                            </div>   
+                                        </div>
+                                </div>
+                                <br>
+                                <div class="row mb-2">
+                                    <div class="col-md-6 fs-6">Arabic</div>
+                                        <div class="row">
+                                            <div class="block-bar" style="width:20px; height: 20px; display: inline-flex;">
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons white">stop</span>
+                                                <span class="material-icons white">stop</span>
+                                                <span class="material-icons white">stop</span>
+                                                <span class="material-icons white">stop</span>
+                                                <span class="material-icons white">stop</span>
+                                            </div>   
+                                        </div>
+                                </div>
+                                <br>
+                                <div class="row mb-2">
+                                    <div class="col-md-6 fs-6">Malayalam</div>
+                                        <div class="row">
+                                            <div class="block-bar" style="width:20px; height: 20px; display: inline-flex;">
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                                <span class="material-icons colour">stop</span>
+                                            </div>   
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                  </div>
+                </div>
+            </div>     
+            <div class="col-md-9 px-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_name">
+                            <h3 class="text-start display-3">SHAN KHALAM</h3>
+                        </div>
+                        <div class="col_designation">
+                            <h3 class="text-start display-6 fw-normal">Web Developer</h3><hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="contact_feild">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 text-center">
+                                        <span class="material-icons phone">
+                                            phone_in_talk
+                                            </span>
+                                    </div>
+                                    <div class="col-md-10 text-center">
+                                        <p class="contact">+91 9961995700</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 text-center">
+                                        <span class="material-icons email">
+                                            alternate_email
+                                            </span>
+                                    </div>
+                                    <div class="col-md-10 text-center">
+                                        <p class="contact">shankhalam@outlook.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 text-center">
+                                        <span class="material-icons whatsapp">
+                                            whatsapp
+                                            </span>
+                                    </div>
+                                    <div class="col-md-10 text-center">
+                                        <p class="contact">+91 9961995700</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 text-center">
+                                        <span class="material-icons house">
+                                            cottage
+                                            </span>
+                                    </div>
+                                    <div class="col-md-10 text-center">
+                                        <p class="contact">Shan Manzil,Thattahumala, Kilimanoor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="social_media">
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <div class="col_image text-center p-1">
+                                    <span class="bi bi-facebook"></span></div>
+                                <div class="col_smname text-center p-1">/ shan.khalam</div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="col_image text-center p-1">
+                                    <span class="bi bi-instagram"></span></div>
+                                <div class="col_smname text-center p-1">/ shan.khalam</div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="col_image text-center p-1">
+                                    <span class="bi bi-twitter"></span></div>
+                                <div class="col_smname text-center p-1">/ shan_khalam</div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="col_image text-center p-1">
+                                    <span class="bi bi-skype"></span></div>
+                                <div class="col_smname text-center p-1">/ shankhalam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                    <div class="heading_we">
+                        <div class="row">
+                            <div class="col">
+                                <h2 style="font-weight: bold;"><span style="color: #64ae9e;">WORK</span> EXPERIENCE</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="job_title">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Product Executive</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <h4 style="color: #64ae9e;">Anthus Pharmaceuticals - 2012-2014</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3">
+                                <p>Worked as product executive in Anthus Pharmaceuticas, one of the leading Pharma company since 2000. I mainly deal with Product Training, Label design, Market Reserch, Competitive Brands.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h4>Product Executive</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <h4 style="color: #64ae9e;">Logon Health Care - 2014-2017</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3">
+                                <p>Worked as product executive in Logon Healthcare, one of the leading Pharma distribution from Trivandrum. I mainly deal with Product purchase,Product management,Market surveys, Approching new methods and new products.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h4>Customer Care Executive</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <h4 style="color: #64ae9e">Nesto Hypermarket(KSA) - 2017-2021</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col3">
+                                <p>Worked as Customercare executive in Nesto Hypermarket,one of the leading Hypermarket chain in Middle East. I mainly deal with Customer handling, In charge of Cashiers and deals with various procedures in front-end Department.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <br>
+                    <div class="heading_edu">
+                        <div class="row">
+                            <h2 style="font-weight: bold;"><span style="color: #64ae9e;">EDU</span>CATION</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="qualification">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Bachelor of Pharmacy</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <p>Kerala University - <span style="color: #64ae9e;">2007-2012</span></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h4>Diploma in Computer Application</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col2">
+                                <p>IIts, Govt.of Kerala - <span style="color: #64ae9e;">2013-2014</span></p>
+                            </div>
+                        </div>
+                    </div>
+                <br>
+                    <div class="class_hobbies">
+                        <div class="row">
+                            <h5 class="text-center" style="color: #64ae9e;" >Hobbies</h5>
+                        </div><hr>
+                  
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <figure class="figure">
+                                    <span class="bi bi-film"></span>
+                                    <figcaption class="figure-caption">Movies.</figcaption>
+                                  </figure>
+                            </li>
+                            <li>
+                                <figure class="figure">
+                                    <span class="bi bi-file-earmark-music-fill"></span>
+                                    <figcaption class="figure-caption">Music.</figcaption>
+                                  </figure>
+                            </li>
+                            <li>
+                                <figure class="figure">
+                                    <span class="bi bi-book-half"></span>
+                                    <figcaption class="figure-caption">Reading.</figcaption>
+                                  </figure>
+                            </li>
+                            <li>
+                                <figure class="figure">
+                                    <span class="bi bi-bicycle"></span>
+                                    <figcaption class="figure-caption">Riding.</figcaption>
+                                  </figure>
+                            </li>
+                            <li>
+                                <figure class="figure">
+                                    <span class="bi bi-controller"></span>
+                                    <figcaption class="figure-caption">Gaming.</figcaption>
+                                  </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    
+         </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.n
+</body>
+</html>
